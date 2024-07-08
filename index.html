@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Chess</h1>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#get-started">Get Started</a></li>
+      <li><a href="#interactive">Quiz</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <section id="overview">
+        <h1 class="quote">Chess is not always about winning, Sometimes it's about leanrning, <br>And so is life</h1>
+        <div class="flex_box">
+            
+            <div class="box">
+                
+                <img src="chessboard.png" width="300px">
+               
+            </div>
+        <div class="box">
+            <h1>Game Overview</h1>
+            <p>Chess is a strategic board game that has been played for centuries. It is a game of skill, strategy, and patience, and it is one of the most popular games in the world. The game is played on an 8x8 board with 64 squares and involves two players who control 16 pieces each.</p>
+            <h1>History of Chess</h1>
+            <p>The origins of chess are believed to date back to the 6th century in India, where it was known as "Chaturanga." The game spread to Persia, where it was called "Shatranj," and then to the Islamic world and eventually Europe. By the 15th century, the modern rules of chess began to take shape, and the game became the one we know today.</p>
+        </div>
+        
+        </div>
+        <br><br>
+        <div class="Box">
+            
+        <h2>Basic Rules and Gameplay Mechanics</h2>
+        <ul>
+          <li><strong>Objective:</strong> The primary objective of chess is to checkmate the opponent's king, which means putting the king in a position where it cannot escape capture.</li>
+          <li><strong>Pieces:</strong> Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns.</li>
+          <li><strong>Board Setup:</strong> The board is set up so that each player has the white (or light) square in the bottom-right corner. The pieces are arranged in the following order: rooks in the corners, knights next to them, bishops next, then the queen on her color (white queen on white, black queen on black), and the king on the remaining square. Pawns are placed in the second row in front of the pieces.</li>
+                <li><strong>Movement(click on the name to view):</strong>
+                    <ul>
+                        <li><strong class="piece1" data-image="king.png"  >King:</strong> Moves one square in any direction.</li>
+                        <li><strong class="piece1" data-image="queen.png">Queen:</strong> Moves any number of squares in any direction.</li>
+                        <li><strong class="piece1" data-image="rook.png">Rook:</strong> Moves any number of squares horizontally or vertically.</li>
+                        <li><strong class="piece1" data-image="bishop.png">Bishop:</strong> Moves any number of squares diagonally.</li>
+                        <li><strong class="piece1" data-image="knight.png">Knight:</strong> Moves in an L-shape: two squares in one direction and then one square perpendicular.</li>
+                        <li><strong class="piece1" data-image="pawn.png">Pawn:</strong> Moves forward one square, with the option to move two squares forward on its first move. Pawns capture diagonally.</li>
+                      </ul>
+                </li>
+               <figure>
+                <img title="Movements" id="piece-image1" src="king.png" width="300px" >
+                <img title="Special Moves" id="piece-image2" src="castling.gif" width="300px" >
+                <figcaption>Movement of Pieces and Special Moves respectively</figcaption>
+            </figure>
+          <li><strong>Special Moves:(click on the name to view)</strong>
+            <ul>
+              <li><strong class="piece2" data-image="castling.gif" >Castling:</strong> A move involving the king and a rook, where the king moves two squares towards the rook, and the rook moves to the square next to the king.</li>
+              <li><strong class="piece2" data-image="enpassant.gif" >En Passant:</strong> A special pawn capture that can occur when a pawn moves two squares forward from its starting position and lands beside an opponent's pawn.</li>
+              <li><strong class="piece2" data-image="promotion.gif" >Promotion:</strong> When a pawn reaches the opposite end of the board, it can be promoted to any other piece (except the king), usually a queen.</li>
+            </ul>
+          </li>
+          <li><strong>End of the Game:</strong> The game ends in checkmate, stalemate (a draw), resignation, or other draw conditions like threefold repetition or the fifty-move rule.</li>
+        </ul>
+    
+    </div>
+    <br>
+    </section>
+    <section id="highlights">
+        <div class="Box">
+            <h2>Key players</h2>
+            <div class="flex_box">
+                <div class="box">
+                    <img src="Magnus.png" width="80%">
+                  
+                   <strong>Magnus Carlsen</strong>
+                    <ul>
+                        <li>World ranking : #1</li>
+                        <li>Classical rating : 2832</li>
+                        <li>Rapid rating : 2827</li>
+                        <li>Blitz rating : 2888</li>
+                    </ul>
+                </div>   
+                <div class="box">
+                    <img src="Hikaru.jpg" width="80%">
+   
+                    <strong>Hikaru Nakamura</strong>
+                    <ul>
+                        <li>World ranking : #2</li>
+                        <li>Classical rating : 2802</li>
+                        <li>Rapid rating : 2746</li>
+                        <li>Blitz rating : 2874</li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="formoreplayer">
+            <a  href= "https://www.chess.com/players" >Click for more info</a>
+            </div>
+        </div>
+        <br><br>
+        
+        <div class="Box">
+            <h2>Memorable Moments(click on the name to view the matches)</h2>
+            <ul>
+                <li class="button" id="redirectButton1">The Immortal Game (1851)</li>
+                <ul>
+                    <li>Players: Adolf Anderssen vs Lionel Kieseritzky</li>
+                    <li>Significance: One of the most famous games in chess history, known for its brilliant sacrifices and spectacular attack, leading to a checkmate.</li>
+                </ul>
+                <li class="button" id="redirectButton2">The Opera Game (1858)</li>
+                <ul>
+                    <li>Players: Paul Morphy vs Duke Karl / Count Isouard</li>
+                    <li>Significance: Played at an opera house in Paris, Morphy demonstrated rapid development and effective use of tactics, culminating in a dazzling checkmate.</li>
+                </ul>
+                <li class="button" id="redirectButton3">Kasparov vs Karpov World Championship Matches (1984-1990)</li>
+                <ul>
+                    <li>Players: Garry Kasparov vs Anatoly Karpov</li>
+                    <li>Significance: A series of intense and highly competitive matches that marked one of the greatest rivalries in chess history.</li>
+                </ul>
+                <li class="button" id="redirectButton4">Deep Blue vs Garry Kasparov (1997)</li>
+                <ul>
+                    <li>Players: Garry Kasparov vs IBM's Deep Blue</li>
+                    <li>Significance: The first time a computer defeated a reigning World Chess Champion in a match, marking a significant milestone in the development of artificial intelligence.</li>
+                </ul>
+            </ul>
+        </div>
+        <br><br>
+        <div class="Box">
+            <h2>Tournaments</strong> </h2>
+            <ul>
+                <li><strong>World Chess Championship</strong></li>
+                <ul>
+                    
+                    <li>Significance: The pinnacle of competitive chess, determining the world champion. Held since 1886, it has seen legendary champions like Garry Kasparov, Bobby Fischer, and Magnus Carlsen.</li>
+                </ul>
+                <li><strong>Candidates Tournament</strong></li>
+                <ul>
+                    
+                    <li>Significance: The tournament that determines the challenger for the World Chess Championship. It features top players and is known for its intense competition and high stakes.</li>
+                </ul>
+                <li><strong> Chess Olympiad</strong></li>
+                <ul>
+                    <li>Significance: A biennial team event where national teams compete. It is one of the largest chess events, featuring teams from all over the world and showcasing top talent in both open and women's sections.</li>
+                </ul>
+                <li><strong>Tata Steel Chess Tournament</strong></li>
+                <ul>
+                    <li>Location: Wijk aan Zee, Netherlands</li>
+                    <li>Significance: One of the longest-running and most prestigious tournaments in the world, attracting elite players annually.</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+    <section id="get-started">
+        <div class="flex_box">
+            <div class="equipment">
+                <h2>Equipment Needed</h2>
+                <ul>
+                    <li>Chessboard: A standard 8x8 chessboard</li>
+                    <li>Chess Pieces: 16 pieces per player (total 32)</li>
+                    <li>Chess Clock (optional for timed games)</li>
+                </ul>
+            </div>
+            <div class="strategies">
+                <h2>Basic Strategies</h2>
+                <p>Chess involves strategic thinking and planning. Some basic strategies include:</p>
+                <ul>
+                    <li>Control the center of the board</li>
+                    <li>Develop your pieces early</li>
+                    <li>Protect your king by castling</li>
+                    <li>Plan ahead and consider your opponent's moves</li>
+                </ul>
+            </div>
+            <div class="tips">
+                <h2>Beginner Tips</h2>
+                <ul>
+                    <li>Practice regularly to improve</li>
+                    <li>Learn from your losses and analyze games</li>
+                    <li>Study classic games and chess puzzles</li>
+                    <li>Join a local chess club or online community</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="interactive">
+        <div class="flex_box">
+            <h2>Chess Basics Quiz</h2>
+            <div id="quiz">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-btn">Next Question</button>
+            </div>
+            <div id="result"></div>
+            
+        </div>
+        <br>
+        <div class="Box">
+            <h1>Play Chess Online</h1>
+            <p>Ready to put your skills to the test? Play chess online against opponents from around the world.</p>
+            <a href="https://www.chess.com/play/online" class="button" id="redirectButton">Play Now</a>
+            <br>
+          </div>
+    </section>
+    
+  </div>
+
+  <footer>
+    <p>© 2024 Chess. All rights reserved.</p>
+    <a href="https://chess.com">Official Game Website</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
